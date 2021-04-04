@@ -141,7 +141,7 @@ def main():
     updater.start_webhook(listen="0.0.0.0",
                           port=int(PORT),
                           url_path=TOKEN)
-    updater.bot.setWebhook('https://torrent-search-engine-telegram.herokuapp.com/' + TOKEN)
+    updater.bot.setWebhook('domain url' + TOKEN)
     '''
     updater.start_polling()
     #'''
