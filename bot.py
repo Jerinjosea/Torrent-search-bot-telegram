@@ -43,9 +43,7 @@ PORT = int(os.environ.get('PORT', 5000))
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                     level=logging.INFO)
 logger = logging.getLogger(__name__)
-TOKEN = '1502976867:AAH8TrWQHWaAupCvcFzoHhXOBH41wwJu8Nk'
-#TOKEN = '1658581199:AAHdSBeXsNjB4SqLmEIQLAagFNJFWtaBKu0' #test bot
-
+#TOKEN = place your token here
 def hello(update: Update, context: CallbackContext) -> None:
     update.message.reply_text(f'Hello {update.effective_user.first_name}')
 
